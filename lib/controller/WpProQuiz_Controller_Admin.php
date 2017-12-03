@@ -87,24 +87,24 @@ class WpProQuiz_Controller_Admin
         $pages = array();
 
         $pages[] = add_menu_page(
-            'WP-Pro-Quiz',
-            'WP-Pro-Quiz',
+            'Quizzes',
+            'Quizzes',
             'wpProQuiz_show',
             'wpProQuiz',
             array($this, 'route'));
 
         $pages[] = add_submenu_page(
             'wpProQuiz',
-            __('Global settings', 'wp-pro-quiz'),
-            __('Global settings', 'wp-pro-quiz'),
+            __('Settings', 'wp-pro-quiz'),
+            __('Settings', 'wp-pro-quiz'),
             'wpProQuiz_change_settings',
             'wpProQuiz_glSettings',
             array($this, 'route'));
 
         $pages[] = add_submenu_page(
             'wpProQuiz',
-            __('Support & More', 'wp-pro-quiz'),
-            __('Support & More', 'wp-pro-quiz'),
+            __('Help', 'wp-pro-quiz'),
+            __('Help', 'wp-pro-quiz'),
             'wpProQuiz_show',
             'wpProQuiz_wpq_support',
             array($this, 'route'));
